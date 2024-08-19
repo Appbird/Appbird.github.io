@@ -1,0 +1,31 @@
+.u-center {
+    display: flex;
+    justify-content: center;
+}
+
+p.u-center {
+    text-align: center;
+}
+
+
+h1 { font-size: 3.0rem; padding-top: 1.0em;}
+h2 { font-size: 2.4rem; padding-top: 0.5em;}
+h3 { font-size: 1.8rem; padding-top: 0.3em;}
+h4 { font-size: 1.5rem; padding-top: 0.3em;}
+
+img {
+    width: 80%;
+}
+
+img.u-small {
+    width: 30%;
+    min-width: 150px;
+}
+
+.u-footnote {
+    color: rgb(173, 173, 173);
+    font-size: 0.9em;
+}
+.u-gray {
+    color: gray;
+}
