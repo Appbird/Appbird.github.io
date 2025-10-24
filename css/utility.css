@@ -9,7 +9,7 @@ p.u-center {
 
 body {
     font-size: 150%;
-    background: linear-gradient(90deg, #d6e7f3, #ffffff);
+    background: #efefef;
 }
 
 
@@ -19,6 +19,7 @@ h2 {
     font-size: 2.4rem;
     padding-top: 0.5em;
     position:relative;
+    
 }
 h2::after {
     content: "";
@@ -28,7 +29,7 @@ h2::after {
     height: 4px;
     border-radius: 2px;
     
-    background: linear-gradient(25deg, #55a0be, #bfeae7); 
+    background: #ae8a75; 
 }
 h3 {
     font-size: 1.8rem;
@@ -45,7 +46,7 @@ h3::before {
     position:absolute;
     top:0.2em;
     left:-5px;
-    background: linear-gradient(25deg, #59e659, rgb(139, 229, 149)); 
+    background: #5ebd5e; 
 }
 h4 { font-size: 1.5rem; padding-top: 0.3em;}
 
@@ -56,12 +57,16 @@ img {
 img.u-icon {
     max-width: 15em;
     border-radius: 100%;
-    border-color: #bfeae7;
+    border-color: #d9b795;
     border-width: 3px;
     border-style: solid;
     padding: 1em;
     width: 30%;
     min-width: 150px;
+}
+
+.u-strong {
+    font-weight: bold;
 }
 
 .u-footnote {
@@ -70,4 +75,33 @@ img.u-icon {
 }
 .u-gray {
     color: gray;
+}
+.u-poster {
+    color: #519b45;
+    font-weight: bold;
+}
+.u-oral {
+    color: #b0794e;
+    font-weight: bold;
+}
+.u-paper {
+    color: #46529e;
+    font-weight: bold;
+}
+.u-reviewed {
+    color: #fff;
+    background-color:#7281df;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.30em;
+    margin: 0.1em;
+}
+
+.u-award {
+    color: #fff;
+    background-color:#59b89b;
+    border-radius: 3px;
+    padding: 0.30em;
+    margin: 0.1em;
+    font-weight: bold;
 }
