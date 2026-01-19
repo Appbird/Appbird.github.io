@@ -10,7 +10,11 @@ p.u-center {
 body {
     font-size: 150%;
     background: #efefef;
+
+    font-family: "M PLUS 1", sans-serif;
+    font-optical-sizing: auto;
 }
+
 
 
 h1 { font-size: 3.0rem; padding-top: 1.0em;}
@@ -19,6 +23,7 @@ h2 {
     font-size: 2.4rem;
     padding-top: 0.5em;
     position:relative;
+    color:  #8a5d42;
     
 }
 h2::after {
@@ -36,6 +41,8 @@ h3 {
     padding-top: 0.3em;
     padding-left: 0.5em;
     position:relative;
+    font-weight: bold;
+    color:rgb(76, 121, 80);
 }
 h3::before {
     content: "";
@@ -49,6 +56,10 @@ h3::before {
     background: #5ebd5e; 
 }
 h4 { font-size: 1.5rem; padding-top: 0.3em;}
+
+a {
+    color:rgb(35, 102, 102);
+}
 
 img {
     width: 80%;
