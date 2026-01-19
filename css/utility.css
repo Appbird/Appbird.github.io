@@ -113,13 +113,11 @@ a.u-paper-name:hover {
     padding-left: 1em;
     margin-top: 1em;
     margin-bottom: 1em;
-    transition: background-color 0.3s, border-width 0.3s;
-    border-bottom: #dad2c7 solid 0em;
+    transition: background-color 0.3s;
 }
 .research-category:hover {
-    transition: background-color 0.3s, border-width 0.3s;
+    transition: background-color 0.3s;
     background-color: #ece8e5;
-    border-bottom-width: 0.5em;
 }
 
 
@@ -188,4 +186,10 @@ a.u-paper-name:hover {
 }
 .u-award:hover {
     background-color:#509681;
+}
+
+/** その他 */
+.u-atcoder-color {
+    color: #497244;
+    font-weight: 600;
 }
