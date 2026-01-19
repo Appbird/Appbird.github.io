@@ -13,17 +13,25 @@ body {
 
     font-family: "M PLUS 1", sans-serif;
     font-optical-sizing: auto;
+    color: #57514e;
 }
 
 
 
-h1 { font-size: 3.0rem; padding-top: 1.0em;}
+h1 {
+    font-size: 3.0rem;
+    padding-top: 1.0em;
+    color: #551c00;
+    font-weight: normal;
+}
 h2 {
     text-align:center;
     font-size: 2.4rem;
     padding-top: 0.5em;
     position:relative;
-    color:  #8a5d42;
+    color:  #9b603b;
+    
+    font-weight: normal;
     
 }
 h2::after {
@@ -34,26 +42,26 @@ h2::after {
     height: 4px;
     border-radius: 2px;
     
-    background: #ae8a75; 
+    background: #b18c76; 
 }
 h3 {
     font-size: 1.8rem;
     padding-top: 0.3em;
     padding-left: 0.5em;
     position:relative;
-    font-weight: bold;
-    color:rgb(76, 121, 80);
+    font-weight: bolder;
+    color:rgb(92, 112, 94);
 }
 h3::before {
     content: "";
     margin: 0 auto;
     display: block;
-    width:3px;
+    width:5px;
     height:1.5em;
     position:absolute;
     top:0.2em;
     left:-5px;
-    background: #5ebd5e; 
+    background-color:rgb(92, 112, 94);
 }
 h4 { font-size: 1.5rem; padding-top: 0.3em;}
 
@@ -80,39 +88,104 @@ img.u-icon {
     font-weight: bold;
 }
 
+/** 論文のタイトルあたりを示すのに使うCSS */
+
+.u-author {
+    color: #55504d;
+    font-weight: 500;
+}
+.u-paper-name {
+    color: #55504d;
+    font-weight: 500;
+}
+a.u-paper-name {
+    color: #55504d;
+}
+a.u-paper-name:hover {
+    color: #836450;
+    background: #e7e3df;
+    transition: 500ms;
+}
+
+.research-category {
+    transition: background-color 0.3s;
+    padding: 0.3em;
+    padding-left: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    transition: background-color 0.3s, border-width 0.3s;
+    border-bottom: #dad2c7 solid 0em;
+}
+.research-category:hover {
+    transition: background-color 0.3s, border-width 0.3s;
+    background-color: #ece8e5;
+    border-bottom-width: 0.5em;
+}
+
+
+/** 論文のステータスを示すのに使うCSS */
 .u-footnote {
     color: rgb(173, 173, 173);
     font-size: 0.9em;
 }
 .u-gray {
-    color: gray;
+    color: #a89b93;
+}
+.u-where {
+    color: #8f837b;
+    font-size: smaller;
+    font-weight: 500;
 }
 .u-poster {
-    color: #519b45;
-    font-weight: bold;
+    color: #497244;
+    font-size: smaller;
+    font-weight: 600;
 }
 .u-oral {
-    color: #b0794e;
-    font-weight: bold;
+    color: #8d6442;
+    font-size: smaller;
+    font-weight: 600;
 }
-.u-paper {
-    color: #46529e;
-    font-weight: bold;
+.u-journal {
+    color: #3e4cb4;
+    font-size: smaller;
+    font-weight: 600;
 }
+
+/** バッジ類 */
+
 .u-reviewed {
     color: #fff;
-    background-color:#7281df;
+    background-color:#8e97d1;
     border-radius: 3px;
     font-weight: bold;
     padding: 0.30em;
     margin: 0.1em;
+    font-size: smaller;
+    
+    transition: 300ms;
 }
+
 
 .u-award {
     color: #fff;
-    background-color:#59b89b;
+    font-size: smaller;
+    background-color:#73b8a3;
     border-radius: 3px;
     padding: 0.30em;
     margin: 0.1em;
     font-weight: bold;
+}
+
+.u-reviewed,.u-award {
+    transition: background-color 300ms;
+}
+.u-reviewed:hover,.u-award:hover {
+    transition: background-color 300ms;
+}
+.u-reviewed:hover {
+    background-color:#616dbb;
+}
+.u-award:hover {
+    background-color:#509681;
 }
