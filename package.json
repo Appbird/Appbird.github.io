@@ -1,0 +1,10 @@
+{
+  "name": "appbird-github-io",
+  "private": true,
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
