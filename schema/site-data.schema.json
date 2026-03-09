@@ -1,0 +1,154 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "./schema/site-data.schema.json",
+  "title": "Appbird Site Data",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "profile",
+    "affiliation",
+    "researchCategories",
+    "workCategories",
+    "career",
+    "skills",
+    "languages",
+    "interest",
+    "hobby",
+    "links"
+  ],
+  "properties": {
+    "profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lines"],
+      "properties": {
+        "lines": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "affiliation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["ja", "en"],
+      "properties": {
+        "ja": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "en": { "type": "string" }
+      }
+    },
+    "researchCategories": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/publicationCategory" }
+    },
+    "workCategories": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/publicationCategory" }
+    },
+    "career": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "skills": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["items"],
+      "properties": {
+        "items": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "atcoder": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["rateText", "referenceText", "referenceUrl"],
+          "properties": {
+            "rateText": { "type": "string" },
+            "referenceText": { "type": "string" },
+            "referenceUrl": {
+              "type": "string",
+              "format": "uri"
+            }
+          }
+        }
+      }
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["name", "usage"],
+        "properties": {
+          "name": { "type": "string" },
+          "usage": { "type": "string" }
+        }
+      }
+    },
+    "interest": { "type": "string" },
+    "hobby": { "type": "string" },
+    "links": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["label", "url"],
+        "properties": {
+          "label": { "type": "string" },
+          "url": {
+            "type": "string",
+            "format": "uri"
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "badge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["className", "text"],
+      "properties": {
+        "className": { "type": "string" },
+        "text": { "type": "string" }
+      }
+    },
+    "publicationItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["authors", "title", "badges", "presentations", "where"],
+      "properties": {
+        "authors": { "type": "string" },
+        "title": { "type": "string" },
+        "url": {
+          "type": "string",
+          "format": "uri"
+        },
+        "badges": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/badge" }
+        },
+        "presentations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/badge" }
+        },
+        "where": { "type": "string" }
+      }
+    },
+    "publicationCategory": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "items"],
+      "properties": {
+        "title": { "type": "string" },
+        "items": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/publicationItem" }
+        }
+      }
+    }
+  }
+}

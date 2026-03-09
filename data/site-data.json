@@ -124,7 +124,6 @@
         }
     ],
     "workCategories": [
-        
         {
             "title": "Landscape Wander: 現実の風景を2Dプラットフォームフィールドにする試み",
             "items": [
@@ -160,6 +159,21 @@
                         { "className": "u-poster", "text": "デモ発表" }
                     ],
                     "where": "情報処理学会 エンタテインメントコンピューティング研究会 第71回研究発表会, 2024-03-17"
+                }
+            ]
+        },
+        {
+            "title": "PaperPilot: 論文検索・研究テーマ育成の支援ツール",
+            "items": [
+                {
+                    "authors": "Yudai Nakamura, Ryosei Kawaguchi, Sunghwa Cho: ",
+                    "title": "PaperPilot: 検索から執筆まで、研究の思考を一つの流れに",
+                    "url": "https://zenn.dev/kamekingdom/articles/ebafb7d2f51dcc",
+                    "badges": [],
+                    "presentations": [
+                        { "className": "u-poster", "text": "ハッカソン" }
+                    ],
+                    "where": "第4回 Agentic AI Hackathon with Google Cloud"
                 }
             ]
         }
